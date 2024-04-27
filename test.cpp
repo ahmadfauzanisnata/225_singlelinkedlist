@@ -16,6 +16,7 @@ void addNode() {
     cout << "Masukkan NAMA: ";
     cin >> nama;
     nodeBaru->noMhs = nim;
+    nodeBaru->name = nama;
     
 
 
