@@ -147,10 +147,48 @@ int main (){
             {
                 case 1:
                 addNode();
-                
+                cout << "Data Berhasil Ditemukan" << endl;
+                system("pause");
+                system("cls");
+                break;
+                case 2:
+                if (listempty())
+                {
+                    cout << "List Kosong" << endl;
+                    system("pause");
+                    system("cls");
+                    break;
+
+                }
+
             }
+            int nim;
+            cout << "Masukkan NIM: ";
+            cin >> nim;
+            if (deleteNode(nim)){
+                cout << "nim: " << nim << " berhasil dihapus" << endl;
+                system("pause");
+                system("cls");
+            }
+            else
+            cout << "Data tidal ditemukan" << endl;
+            break;
+            case 3:
+            traverse();
+            break;
+            case 4:
+            searchData();
+            break;
+            default:
+            cout << "Pilihan tidak ada" << endl;
+            break;
+
 
         }
     }
+    catch (exception e)
+    {
+        cout << "Terjadi kesalahna" << endl;
+    }
+}while (pilihan != 5);
     
-}
