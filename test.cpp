@@ -99,6 +99,19 @@ void traverse(){
 
     }
     else {
-        N
+        Node* currentNode = START;
+        while (currentNode != NULL){
+            cout << "NIM: " << currentNode->noMhs << ",Nama: " << currentNode->name << endl;
+            currentNode = currentNode->next;
+        }
+    }
+}
+void searchData(){
+    if (listempty()){
+        cout << "List Kosong" << endl;
+        system("pause");
+        system("cls");
+        return;
+
     }
 }
